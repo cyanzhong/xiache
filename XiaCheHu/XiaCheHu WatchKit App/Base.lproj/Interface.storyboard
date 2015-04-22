@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Root Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="XWRootController">
+                    <items>
+                        <table alignment="left" id="c1T-gu-GQe">
+                            <items>
+                                <tableRow identifier="NewsCell" id="UhJ-4Z-vaF" customClass="XWNewsCell">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="bY5-9e-mVc">
+                                        <items>
+                                            <group width="1" alignment="left" id="foX-GW-Dh6">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" numberOfLines="0" minimumScaleFactor="0.29999999999999999" id="USI-xF-z5I">
+                                                        <fontDescription key="font" type="boldSystem" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="FOb-9q-dXS">
+                                                <items>
+                                                    <group width="24" height="24" alignment="left" radius="4" id="Kc3-Sb-1xr">
+                                                        <items>
+                                                            <imageView width="1" height="1" alignment="left" verticalAlignment="center" id="Pzm-nJ-as1"/>
+                                                        </items>
+                                                    </group>
+                                                    <label alignment="left" verticalAlignment="center" text="Label" minimumScaleFactor="0.5" id="pKh-5Q-hDJ">
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="ZRa-Bu-i9C">
+                                                <items>
+                                                    <label width="1" alignment="left" text="Label" numberOfLines="0" id="K5Q-5v-AB1">
+                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="answerLabel" destination="K5Q-5v-AB1" id="0Nx-FB-kTO"/>
+                                        <outlet property="authorLabel" destination="pKh-5Q-hDJ" id="cDE-Ap-qu1"/>
+                                        <outlet property="avatarImage" destination="Pzm-nJ-as1" id="xxJ-xl-khZ"/>
+                                        <outlet property="questionLabel" destination="USI-xF-z5I" id="tGy-eX-vpW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="table" destination="c1T-gu-GQe" id="y5l-0i-htG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="164" y="217"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="XWGlanceController">
+                    <items>
+                        <group alignment="left" id="gv7-I2-MZq"/>
+                        <group alignment="left" id="eew-Gs-W6Y"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>

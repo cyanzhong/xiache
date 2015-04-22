@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>AppCom.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>Glance - XiaCheHu WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>XiaCheHu WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>XiaCheHu.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>878345881AE8019A0011D8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>878345A11AE8019A0011D8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>878345B61AE802D80011D8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>878345C01AE802D80011D8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>878345E81AE8034E0011D8E1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
