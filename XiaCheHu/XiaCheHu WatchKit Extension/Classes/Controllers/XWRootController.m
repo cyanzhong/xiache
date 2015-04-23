@@ -49,27 +49,26 @@
 
 - (void)updateUI {
     
-    [[XCNewsManager manager] getIndexes:^(XCNewsModel *newsModel) {
-        [[XCNewsManager manager] getQuestions:newsModel success:^(NSArray *questions) {
-            [self.table setNumberOfRows:questions.count withRowType:@"NewsCell"];
-            
-            NSString *prevTitle = @"";
-            
-            for (int i=0; i<questions.count; ++i) {
-                XCQuestionModel *model = questions[i];
-                XWNewsCell *cell = [self.table rowControllerAtIndex:i];
-                [cell.questionLabel setText:model.question_title];
-                [cell.authorLabel setText:model.author];
-                [cell.answerLabel setText:model.content];
-                [cell.titleGroup setHidden:[prevTitle isEqualToString:model.question_title]];
-                prevTitle = model.question_title;
-                // image
-                SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
-                [downloader downloadImageWithURL:[NSURL URLWithString:model.avatar] options:0 progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
-                    [cell.avatarImage setImage:image];
-                }];
-            }
-        }];
+    [[XCNewsManager manager] getXiaChe:^(NSArray *questions) {
+        
+        [self.table setNumberOfRows:questions.count withRowType:@"NewsCell"];
+        
+        NSString *prevTitle = @"";
+        
+        for (int i=0; i<questions.count; ++i) {
+            XCQuestionModel *model = questions[i];
+            XWNewsCell *cell = [self.table rowControllerAtIndex:i];
+            [cell.questionLabel setText:model.question_title];
+            [cell.authorLabel setText:model.author];
+            [cell.answerLabel setText:model.content];
+            [cell.titleGroup setHidden:[prevTitle isEqualToString:model.question_title]];
+            prevTitle = model.question_title;
+            // image
+            SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
+            [downloader downloadImageWithURL:[NSURL URLWithString:model.avatar] options:0 progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+                [cell.avatarImage setImage:image];
+            }];
+        }
     }];
 }
 

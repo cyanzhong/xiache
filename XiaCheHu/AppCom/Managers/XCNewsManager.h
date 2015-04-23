@@ -14,8 +14,6 @@
 
 + (instancetype)manager;
 
-- (void)getIndexes:(void (^)(XCNewsModel *newsModel))success;
-
-- (void)getQuestions:(XCNewsModel *)newsModel success:(void (^)(NSArray *questions))success;
+- (void)getXiaChe:(void (^)(NSArray *questions))success;
 
 @end

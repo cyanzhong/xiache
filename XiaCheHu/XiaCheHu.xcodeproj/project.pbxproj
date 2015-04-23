@@ -353,6 +353,7 @@
 		878347031AE80E0B0011D8E1 /* NSString+HTMLEntities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HTMLEntities.m"; sourceTree = "<group>"; };
 		8783472F1AE817620011D8E1 /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		878347301AE817620011D8E1 /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		879CEBDC1AE89454000F3EAA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -389,6 +390,7 @@
 				8783458B1AE8019A0011D8E1 /* XiaCheHu */,
 				878345DC1AE8034E0011D8E1 /* XiaCheHu WatchKit Extension */,
 				878345ED1AE8034E0011D8E1 /* XiaCheHu WatchKit App */,
+				879CEBDB1AE89454000F3EAA /* Frameworks */,
 				8783458A1AE8019A0011D8E1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -899,6 +901,14 @@
 				878347031AE80E0B0011D8E1 /* NSString+HTMLEntities.m */,
 			);
 			path = HTMLReader;
+			sourceTree = "<group>";
+		};
+		879CEBDB1AE89454000F3EAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				879CEBDC1AE89454000F3EAA /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

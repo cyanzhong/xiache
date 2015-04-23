@@ -22,7 +22,16 @@
     });
 }
 
-- (void)getIndexes:(void (^)(XCNewsModel *))success {
+- (void)getXiaChe:(void (^)(NSArray *))success {
+    XCNewsManager *mgr = [XCNewsManager manager];
+    [mgr getIndexes:^(XCNewsModel *indexes) {
+        [mgr getQuestions:indexes success:^(NSArray *contents) {
+            success(contents);
+        }];
+    }];
+}
+
+- (void)getIndexes:(void (^)(XCNewsModel *indexes))success {
     [[XCNetworkManager manager] get:kAPIURL success:^(NSString *response) {
         XCNewsModel *newsModel = [self parseIndexes:response];
         success(newsModel);
