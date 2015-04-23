@@ -14,36 +14,6 @@
 #define ComDefaults         [[NSUserDefaults alloc] initWithSuiteName:kAppGroupId]
 #define kSharedContainerUrl [[NSFileManager defaultManager] containerURLForSecurityApplicationGroupIdentifier:kAppGroupId]
 
-// 满足条件直接返回
-#define RETURN_IF(condition) \
-if (condition) { \
-    return ; \
-} \
-
-// 不满足条件直接返回
-#define RETURN_IF_NOT(condition) \
-if (!(condition)) { \
-    return ; \
-} \
-
-// 如果obj为nil 直接return
-#define RETURN_IF_NIL(obj) \
-if (nil == (obj)) { \
-    return ; \
-} \
-
-// 满足条件 continue
-#define CONTINUE_IF(condition) \
-if (condition) { \
-    continue ; \
-} \
-
-// 不满足条件 continue
-#define CONTINUE_IF_NOT_(condition) \
-if (!(condition)) { \
-    continue ; \
-} \
-
 // 用于生成单例
 #define DEF_SINGLETON(block) \
 static dispatch_once_t pred = 0; \

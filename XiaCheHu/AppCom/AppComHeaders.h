@@ -1,6 +1,6 @@
 //
 //  AppComHeaders.h
-//  GifSender
+//  XiaCheHu
 //
 //  Created by cyan on 15/2/13.
 //  Copyright (c) 2015年 cyan. All rights reserved.

@@ -22,18 +22,12 @@
 		878346041AE8040A0011D8E1 /* AppMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346001AE8040A0011D8E1 /* AppMacros.h */; };
 		878346051AE8040A0011D8E1 /* AppNotifications.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346011AE8040A0011D8E1 /* AppNotifications.h */; };
 		878346061AE8040A0011D8E1 /* AppStyles.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346021AE8040A0011D8E1 /* AppStyles.h */; };
-		878346581AE804650011D8E1 /* NSDate+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346081AE804640011D8E1 /* NSDate+Extension.h */; };
-		878346591AE804650011D8E1 /* NSDate+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346091AE804640011D8E1 /* NSDate+Extension.m */; };
-		8783465A1AE804650011D8E1 /* NSDictionary+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8783460A1AE804640011D8E1 /* NSDictionary+Extension.h */; };
-		8783465B1AE804650011D8E1 /* NSDictionary+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8783460B1AE804640011D8E1 /* NSDictionary+Extension.m */; };
 		8783465C1AE804650011D8E1 /* NSObject+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8783460C1AE804640011D8E1 /* NSObject+Extension.h */; };
 		8783465D1AE804650011D8E1 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 8783460D1AE804640011D8E1 /* NSObject+Extension.m */; };
 		8783465E1AE804650011D8E1 /* UIColor+FlatUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 8783460E1AE804640011D8E1 /* UIColor+FlatUI.h */; };
 		8783465F1AE804650011D8E1 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 8783460F1AE804640011D8E1 /* UIColor+FlatUI.m */; };
 		878346601AE804650011D8E1 /* UIColor+Image.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346101AE804640011D8E1 /* UIColor+Image.h */; };
 		878346611AE804650011D8E1 /* UIColor+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346111AE804640011D8E1 /* UIColor+Image.m */; };
-		878346621AE804650011D8E1 /* UILabel+Transition.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346121AE804640011D8E1 /* UILabel+Transition.h */; };
-		878346631AE804650011D8E1 /* UILabel+Transition.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346131AE804640011D8E1 /* UILabel+Transition.m */; };
 		878346641AE804650011D8E1 /* UIView+Extension.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346141AE804640011D8E1 /* UIView+Extension.h */; };
 		878346651AE804650011D8E1 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346151AE804640011D8E1 /* UIView+Extension.m */; };
 		878346661AE804650011D8E1 /* XCNetworkManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346171AE804650011D8E1 /* XCNetworkManager.h */; };
@@ -219,18 +213,12 @@
 		878346001AE8040A0011D8E1 /* AppMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppMacros.h; sourceTree = "<group>"; };
 		878346011AE8040A0011D8E1 /* AppNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppNotifications.h; sourceTree = "<group>"; };
 		878346021AE8040A0011D8E1 /* AppStyles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStyles.h; sourceTree = "<group>"; };
-		878346081AE804640011D8E1 /* NSDate+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Extension.h"; sourceTree = "<group>"; };
-		878346091AE804640011D8E1 /* NSDate+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Extension.m"; sourceTree = "<group>"; };
-		8783460A1AE804640011D8E1 /* NSDictionary+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Extension.h"; sourceTree = "<group>"; };
-		8783460B1AE804640011D8E1 /* NSDictionary+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Extension.m"; sourceTree = "<group>"; };
 		8783460C1AE804640011D8E1 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		8783460D1AE804640011D8E1 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		8783460E1AE804640011D8E1 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
 		8783460F1AE804640011D8E1 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
 		878346101AE804640011D8E1 /* UIColor+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Image.h"; sourceTree = "<group>"; };
 		878346111AE804640011D8E1 /* UIColor+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Image.m"; sourceTree = "<group>"; };
-		878346121AE804640011D8E1 /* UILabel+Transition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Transition.h"; sourceTree = "<group>"; };
-		878346131AE804640011D8E1 /* UILabel+Transition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Transition.m"; sourceTree = "<group>"; };
 		878346141AE804640011D8E1 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		878346151AE804640011D8E1 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		878346171AE804650011D8E1 /* XCNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNetworkManager.h; sourceTree = "<group>"; };
@@ -495,18 +483,12 @@
 		878346071AE804640011D8E1 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				878346081AE804640011D8E1 /* NSDate+Extension.h */,
-				878346091AE804640011D8E1 /* NSDate+Extension.m */,
-				8783460A1AE804640011D8E1 /* NSDictionary+Extension.h */,
-				8783460B1AE804640011D8E1 /* NSDictionary+Extension.m */,
 				8783460C1AE804640011D8E1 /* NSObject+Extension.h */,
 				8783460D1AE804640011D8E1 /* NSObject+Extension.m */,
 				8783460E1AE804640011D8E1 /* UIColor+FlatUI.h */,
 				8783460F1AE804640011D8E1 /* UIColor+FlatUI.m */,
 				878346101AE804640011D8E1 /* UIColor+Image.h */,
 				878346111AE804640011D8E1 /* UIColor+Image.m */,
-				878346121AE804640011D8E1 /* UILabel+Transition.h */,
-				878346131AE804640011D8E1 /* UILabel+Transition.m */,
 				878346141AE804640011D8E1 /* UIView+Extension.h */,
 				878346151AE804640011D8E1 /* UIView+Extension.m */,
 				8783472F1AE817620011D8E1 /* NSString+Extension.h */,
@@ -947,10 +929,8 @@
 				878346951AE804650011D8E1 /* UIImage+MultiFormat.h in Headers */,
 				878347171AE80E0B0011D8E1 /* HTMLPreprocessedInputStream.h in Headers */,
 				878346601AE804650011D8E1 /* UIColor+Image.h in Headers */,
-				878346621AE804650011D8E1 /* UILabel+Transition.h in Headers */,
 				8783470A1AE80E0B0011D8E1 /* HTMLElement.h in Headers */,
 				8783471F1AE80E0B0011D8E1 /* HTMLString.h in Headers */,
-				8783465A1AE804650011D8E1 /* NSDictionary+Extension.h in Headers */,
 				878346751AE804650011D8E1 /* AFURLRequestSerialization.h in Headers */,
 				8783467B1AE804650011D8E1 /* EXTScope.h in Headers */,
 				878347081AE80E0B0011D8E1 /* HTMLDocumentType.h in Headers */,
@@ -968,7 +948,6 @@
 				878346641AE804650011D8E1 /* UIView+Extension.h in Headers */,
 				8783465C1AE804650011D8E1 /* NSObject+Extension.h in Headers */,
 				8783471B1AE80E0B0011D8E1 /* HTMLSelector.h in Headers */,
-				878346581AE804650011D8E1 /* NSDate+Extension.h in Headers */,
 				878347291AE80E0B0011D8E1 /* NSString+HTMLEntities.h in Headers */,
 				878346CE1AE808030011D8E1 /* JSONKit.h in Headers */,
 				878346041AE8040A0011D8E1 /* AppMacros.h in Headers */,
@@ -1179,7 +1158,6 @@
 				8783468D1AE804650011D8E1 /* SDWebImageManager.m in Sources */,
 				878346871AE804650011D8E1 /* SDWebImageDecoder.m in Sources */,
 				8783470F1AE80E0B0011D8E1 /* HTMLEntities.m in Sources */,
-				8783465B1AE804650011D8E1 /* NSDictionary+Extension.m in Sources */,
 				878346611AE804650011D8E1 /* UIColor+Image.m in Sources */,
 				878346901AE804650011D8E1 /* SDWebImagePrefetcher.m in Sources */,
 				8783471C1AE80E0B0011D8E1 /* HTMLSelector.m in Sources */,
@@ -1189,7 +1167,6 @@
 				878346651AE804650011D8E1 /* UIView+Extension.m in Sources */,
 				878347231AE80E0B0011D8E1 /* HTMLTextNode.m in Sources */,
 				878347091AE80E0B0011D8E1 /* HTMLDocumentType.m in Sources */,
-				878346591AE804650011D8E1 /* NSDate+Extension.m in Sources */,
 				878346941AE804650011D8E1 /* UIImage+GIF.m in Sources */,
 				878346981AE804650011D8E1 /* UIImage+WebP.m in Sources */,
 				878346811AE804650011D8E1 /* NSData+ImageContentType.m in Sources */,
@@ -1220,7 +1197,6 @@
 				878347071AE80E0B0011D8E1 /* HTMLDocument.m in Sources */,
 				878347201AE80E0B0011D8E1 /* HTMLString.m in Sources */,
 				878346781AE804650011D8E1 /* AFURLResponseSerialization.m in Sources */,
-				878346631AE804650011D8E1 /* UILabel+Transition.m in Sources */,
 				878347321AE817620011D8E1 /* NSString+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

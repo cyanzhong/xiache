@@ -18,8 +18,8 @@
 #define LightFont           @"HelveticaNeue-Light"
 #define ThinFont            @"HelveticaNeue-Thin"
 
-#define HD_FONT_SIZE_SMALL  12
-#define HD_FONT_SIZE_MEDIUM 16
-#define HD_FONT_SIZE_LARGE  18
+#define XC_FONT_SIZE_SMALL  12
+#define XC_FONT_SIZE_MEDIUM 16
+#define XC_FONT_SIZE_LARGE  18
 
 #endif
