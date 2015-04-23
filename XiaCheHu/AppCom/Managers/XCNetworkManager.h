@@ -9,7 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "AFNetworking.h"
 
-static NSString * const kAPIURL = @"http://news-at.zhihu.com/api/3/news/latest";
+static NSString * const kAPIURL     = @"http://news-at.zhihu.com/api/3/news/latest";
+static NSString * const kNewsURL    = @"http://news-at.zhihu.com/api/3/news/";
 
 @interface XCNetworkManager : NSObject
 

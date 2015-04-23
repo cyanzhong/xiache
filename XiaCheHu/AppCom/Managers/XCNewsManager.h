@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "XCNewsModel.h"
-#import "XCContentModel.h"
+#import "XCQuestionModel.h"
 
 @interface XCNewsManager : NSObject
 
 + (instancetype)manager;
 
-- (void)getLatest:(void (^)(XCNewsModel *newsModel))success;
+- (void)getIndexes:(void (^)(XCNewsModel *newsModel))success;
 
-- (void)getContent:(XCNewsModel *)newsModel success:(void (^)(NSArray *contents))success;
+- (void)getQuestions:(XCNewsModel *)newsModel success:(void (^)(NSArray *questions))success;
 
 @end

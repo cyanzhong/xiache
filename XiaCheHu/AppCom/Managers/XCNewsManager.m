@@ -22,16 +22,16 @@
     });
 }
 
-- (void)getLatest:(void (^)(XCNewsModel *))success {
+- (void)getIndexes:(void (^)(XCNewsModel *))success {
     [[XCNetworkManager manager] get:kAPIURL success:^(NSString *response) {
-        XCNewsModel *newsModel = [self parseNews:response];
+        XCNewsModel *newsModel = [self parseIndexes:response];
         success(newsModel);
     } failure:^(NSString *errMsg) {
         
     }];
 }
 
-- (XCNewsModel *)parseNews:(NSString *)jsonString {
+- (XCNewsModel *)parseIndexes:(NSString *)jsonString {
     NSDictionary *json = [jsonString objectFromJSONString];
     NSArray *stories = json[@"stories"];
     for (NSDictionary *item in stories) {
@@ -43,29 +43,31 @@
     return nil;
 }
 
-- (void)getContent:(XCNewsModel *)newsModel success:(void (^)(NSArray *contents))success {
-    NSString *url = [NSString stringWithFormat:@"http://news-at.zhihu.com/api/3/news/%@", newsModel.newsId];
+- (void)getQuestions:(XCNewsModel *)newsModel success:(void (^)(NSArray *contents))success {
+    NSString *url = [NSString stringWithFormat:@"%@%@", kNewsURL, newsModel.newsId];
     [[XCNetworkManager manager] get:url success:^(NSString *response) {
-        NSArray *list = [self parseContent:response];
+        NSArray *list = [self parseQuestions:response];
         success(list);
     } failure:^(NSString *errMsg) {
         NSLog(@"err: %@", errMsg);
     }];
 }
 
-- (NSArray *)parseContent:(NSString *)jsonString {
+- (NSArray *)parseQuestions:(NSString *)jsonString {
     NSMutableArray *list = [[NSMutableArray alloc] init];
     NSDictionary *json = [jsonString objectFromJSONString];
     HTMLDocument *doc = [HTMLDocument documentWithString:json[@"body"]];
     NSArray *questions = [doc nodesMatchingSelector:@"div[class='question']"];
     for (HTMLElement *node in questions) {
-        HTMLElement *answerNode = [node firstNodeMatchingSelector:@"div[class='answer']"];
-        XCContentModel *contentModel = [[XCContentModel alloc] init];
-        contentModel.question = [[[node firstNodeMatchingSelector:@"h2[class='question-title']"] textContent] trim];
-        contentModel.author = [[[answerNode firstNodeMatchingSelector:@"div[class='meta']"] textContent] trim];
-        contentModel.avatarUrl = [answerNode firstNodeMatchingSelector:@"img[class='avatar']"].attributes[@"src"];
-        contentModel.answer = [[[answerNode firstNodeMatchingSelector:@"div[class='content']"] textContent] trim];
-        [list addObject:contentModel];
+        NSArray *answers = [node nodesMatchingSelector:@"div[class='answer']"];
+        for (HTMLElement *answer in answers) {
+            XCQuestionModel *questionModel = [[XCQuestionModel alloc] init];
+            questionModel.question_title = [[[node firstNodeMatchingSelector:@"h2[class='question-title']"] textContent] trim];
+            questionModel.author = [[[answer firstNodeMatchingSelector:@"div[class='meta']"] textContent] trim];
+            questionModel.avatar = [answer firstNodeMatchingSelector:@"img[class='avatar']"].attributes[@"src"];
+            questionModel.content = [[[answer firstNodeMatchingSelector:@"div[class='content']"] textContent] trim];
+            [list addObject:questionModel];
+        }
     }
     return list;
 }

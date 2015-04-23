@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14E7f" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
@@ -24,7 +24,7 @@
                                             </group>
                                             <group width="1" alignment="left" id="FOb-9q-dXS">
                                                 <items>
-                                                    <group width="24" height="24" alignment="left" radius="4" id="Kc3-Sb-1xr">
+                                                    <group width="24" height="24" alignment="left" radius="2" id="Kc3-Sb-1xr">
                                                         <items>
                                                             <imageView width="1" height="1" alignment="left" verticalAlignment="center" id="Pzm-nJ-as1"/>
                                                         </items>
@@ -38,17 +38,19 @@
                                             <group width="1" alignment="left" id="ZRa-Bu-i9C">
                                                 <items>
                                                     <label width="1" alignment="left" text="Label" numberOfLines="0" id="K5Q-5v-AB1">
-                                                        <fontDescription key="font" type="system" pointSize="13"/>
+                                                        <fontDescription key="font" type="system" pointSize="13.5"/>
                                                     </label>
                                                 </items>
                                             </group>
                                         </items>
+                                        <edgeInsets key="margins" left="3" right="3" top="3" bottom="3"/>
                                     </group>
                                     <connections>
                                         <outlet property="answerLabel" destination="K5Q-5v-AB1" id="0Nx-FB-kTO"/>
                                         <outlet property="authorLabel" destination="pKh-5Q-hDJ" id="cDE-Ap-qu1"/>
                                         <outlet property="avatarImage" destination="Pzm-nJ-as1" id="xxJ-xl-khZ"/>
                                         <outlet property="questionLabel" destination="USI-xF-z5I" id="tGy-eX-vpW"/>
+                                        <outlet property="titleGroup" destination="foX-GW-Dh6" id="VeW-8q-pau"/>
                                     </connections>
                                 </tableRow>
                             </items>

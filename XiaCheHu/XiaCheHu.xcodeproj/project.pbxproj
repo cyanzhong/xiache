@@ -105,8 +105,8 @@
 		878346D31AE809070011D8E1 /* XCNewsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346D11AE809070011D8E1 /* XCNewsManager.m */; };
 		878346D61AE809CF0011D8E1 /* XCNewsModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346D41AE809CF0011D8E1 /* XCNewsModel.h */; };
 		878346D71AE809CF0011D8E1 /* XCNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346D51AE809CF0011D8E1 /* XCNewsModel.m */; };
-		878346DA1AE80D660011D8E1 /* XCContentModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346D81AE80D660011D8E1 /* XCContentModel.h */; };
-		878346DB1AE80D660011D8E1 /* XCContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346D91AE80D660011D8E1 /* XCContentModel.m */; };
+		878346DA1AE80D660011D8E1 /* XCQuestionModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346D81AE80D660011D8E1 /* XCQuestionModel.h */; };
+		878346DB1AE80D660011D8E1 /* XCQuestionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346D91AE80D660011D8E1 /* XCQuestionModel.m */; };
 		878347041AE80E0B0011D8E1 /* HTMLComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346DD1AE80E0B0011D8E1 /* HTMLComment.h */; };
 		878347051AE80E0B0011D8E1 /* HTMLComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 878346DE1AE80E0B0011D8E1 /* HTMLComment.m */; };
 		878347061AE80E0B0011D8E1 /* HTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = 878346DF1AE80E0B0011D8E1 /* HTMLDocument.h */; };
@@ -310,8 +310,8 @@
 		878346D11AE809070011D8E1 /* XCNewsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNewsManager.m; sourceTree = "<group>"; };
 		878346D41AE809CF0011D8E1 /* XCNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCNewsModel.h; sourceTree = "<group>"; };
 		878346D51AE809CF0011D8E1 /* XCNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCNewsModel.m; sourceTree = "<group>"; };
-		878346D81AE80D660011D8E1 /* XCContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCContentModel.h; sourceTree = "<group>"; };
-		878346D91AE80D660011D8E1 /* XCContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCContentModel.m; sourceTree = "<group>"; };
+		878346D81AE80D660011D8E1 /* XCQuestionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCQuestionModel.h; sourceTree = "<group>"; };
+		878346D91AE80D660011D8E1 /* XCQuestionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XCQuestionModel.m; sourceTree = "<group>"; };
 		878346DD1AE80E0B0011D8E1 /* HTMLComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLComment.h; sourceTree = "<group>"; };
 		878346DE1AE80E0B0011D8E1 /* HTMLComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLComment.m; sourceTree = "<group>"; };
 		878346DF1AE80E0B0011D8E1 /* HTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLDocument.h; sourceTree = "<group>"; };
@@ -529,8 +529,8 @@
 			children = (
 				878346D41AE809CF0011D8E1 /* XCNewsModel.h */,
 				878346D51AE809CF0011D8E1 /* XCNewsModel.m */,
-				878346D81AE80D660011D8E1 /* XCContentModel.h */,
-				878346D91AE80D660011D8E1 /* XCContentModel.m */,
+				878346D81AE80D660011D8E1 /* XCQuestionModel.h */,
+				878346D91AE80D660011D8E1 /* XCQuestionModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -947,7 +947,7 @@
 				878346D61AE809CF0011D8E1 /* XCNewsModel.h in Headers */,
 				8783466F1AE804650011D8E1 /* AFNetworkReachabilityManager.h in Headers */,
 				8783468F1AE804650011D8E1 /* SDWebImagePrefetcher.h in Headers */,
-				878346DA1AE80D660011D8E1 /* XCContentModel.h in Headers */,
+				878346DA1AE80D660011D8E1 /* XCQuestionModel.h in Headers */,
 				878347241AE80E0B0011D8E1 /* HTMLTokenizer.h in Headers */,
 				878346931AE804650011D8E1 /* UIImage+GIF.h in Headers */,
 				8783469D1AE804650011D8E1 /* UIView+WebCacheOperation.h in Headers */,
@@ -1160,7 +1160,7 @@
 				8783467A1AE804650011D8E1 /* AFURLSessionManager.m in Sources */,
 				878346741AE804650011D8E1 /* AFURLConnectionOperation.m in Sources */,
 				8783469A1AE804650011D8E1 /* UIImageView+HighlightedWebCache.m in Sources */,
-				878346DB1AE80D660011D8E1 /* XCContentModel.m in Sources */,
+				878346DB1AE80D660011D8E1 /* XCQuestionModel.m in Sources */,
 				878347121AE80E0B0011D8E1 /* HTMLNode.m in Sources */,
 				878346691AE804650011D8E1 /* AFHTTPRequestOperation.m in Sources */,
 				8783465F1AE804650011D8E1 /* UIColor+FlatUI.m in Sources */,

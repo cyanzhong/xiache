@@ -12,6 +12,8 @@
 
 @interface XWNewsCell : NSObject
 
+
+@property (weak, nonatomic) IBOutlet WKInterfaceGroup *titleGroup;
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *questionLabel;
 @property (nonatomic, weak) IBOutlet WKInterfaceImage *avatarImage;
 @property (nonatomic, weak) IBOutlet WKInterfaceLabel *authorLabel;
@@ -46,18 +48,24 @@
 }
 
 - (void)updateUI {
-    [[XCNewsManager manager] getLatest:^(XCNewsModel *newsModel) {
-        [[XCNewsManager manager] getContent:newsModel success:^(NSArray *contents) {
-            [self.table setNumberOfRows:contents.count withRowType:@"NewsCell"];
-            for (int i=0; i<contents.count; ++i) {
-                XCContentModel *model = contents[i];
+    
+    [[XCNewsManager manager] getIndexes:^(XCNewsModel *newsModel) {
+        [[XCNewsManager manager] getQuestions:newsModel success:^(NSArray *questions) {
+            [self.table setNumberOfRows:questions.count withRowType:@"NewsCell"];
+            
+            NSString *prevTitle = @"";
+            
+            for (int i=0; i<questions.count; ++i) {
+                XCQuestionModel *model = questions[i];
                 XWNewsCell *cell = [self.table rowControllerAtIndex:i];
-                [cell.questionLabel setText:model.question];
+                [cell.questionLabel setText:model.question_title];
                 [cell.authorLabel setText:model.author];
-                [cell.answerLabel setText:model.answer];
+                [cell.answerLabel setText:model.content];
+                [cell.titleGroup setHidden:[prevTitle isEqualToString:model.question_title]];
+                prevTitle = model.question_title;
                 // image
                 SDWebImageDownloader *downloader = [SDWebImageDownloader sharedDownloader];
-                [downloader downloadImageWithURL:[NSURL URLWithString:model.avatarUrl] options:0 progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
+                [downloader downloadImageWithURL:[NSURL URLWithString:model.avatar] options:0 progress:nil completed:^(UIImage *image, NSData *data, NSError *error, BOOL finished) {
                     [cell.avatarImage setImage:image];
                 }];
             }

@@ -1,13 +1,13 @@
 //
-//  XCContentModel.m
+//  XCQuestionModel.m
 //  XiaCheHu
 //
 //  Created by cyan on 15/4/23.
 //  Copyright (c) 2015年 cyan. All rights reserved.
 //
 
-#import "XCContentModel.h"
+#import "XCQuestionModel.h"
 
-@implementation XCContentModel
+@implementation XCQuestionModel
 
 @end
